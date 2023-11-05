@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <!-- <h1>Welcome, <%= user.username %>!</h1> -->
+  <h2>Set an Alarm</h2>
+  <form action="/alarms/set-alarm" method="post">
+    <label for="time">Alarm Time:</label>
+    <input type="text" id="time" name="time" placeholder="e.g., 2023-11-04 15:30:00" required>
+    <button type="submit">Set Alarm</button>
+  </form>
+  <h2>Your Alarms</h2>
+  <ul>
+    <% alarms.forEach(alarm => { %>
+      <li><%= alarm %></li>
+    <% }); %>
+  </ul>
+  <a href="/logout">Logout</a>
+</body>
+</html>
