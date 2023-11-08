@@ -47,7 +47,8 @@ const Home = () => {
         <div>
             <h2>Home</h2>
             {message != "" && <h1 style={{ color: "red", backgroundColor: "yellow", padding: "10px" }}>{message}</h1>}
-            <h2>Set an Alarm</h2>
+            <h2>Set an Alarm</h2> 
+            <h4>Input Date Format (2023-11-08 11:50:00)</h4>
             <form onSubmit={handelSubmit}>
                 <label htmlFor="time">Alarm Time:</label>
                 <input type="text" id="time" name="time" ref={inputref} placeholder="e.g., 2023-11-04 15:30:00" required />
