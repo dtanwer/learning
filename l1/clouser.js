@@ -34,6 +34,7 @@ const productMarket = () => {
                                 name,
                                 stock,
                                 price
+                                
                             }
                         }
                     }
