@@ -1,0 +1,11 @@
+docker --version  version for Docker
+docker ps   -> show  the container list of cointainer running
+docker images ls   -> lsit of images
+docker build -t bank-list .   -> to  build images
+docker build -f Dockerfile.dev -t bank-list .   -> to  build images
+docker run --name bank --rm -p 3000:3000  bank-list -> To run the container 
+docker run --rm  --name bank -e CHOKIDAR_USEPOLLING=true -p 3000:3000 -v $(pwd):/app  bank-list   -> to run conatainer to see live changes
+
+docker-compose down
+docker-compose up -d
+
